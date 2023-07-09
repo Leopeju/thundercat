@@ -1,0 +1,115 @@
+body{
+  font-family: "Oxanium", cursive;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body::before{
+  content:"";
+  background-image: url(../thunderctas/lion1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+
+
+}
+
+.cabecalho{
+  
+  display: flex;
+   justify-content: left;
+   
+}
+.logo{
+  width: 100px;
+  height: 100px;
+}
+p{
+  font-family:'Roboto', sans-serif ;
+  color:#fff;
+  margin-left :4rem;
+  padding: 1em 9em;
+  border-radius: 20px;
+  
+
+
+}
+
+
+.selecao-de-personagens{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: calc(100vh -150px);
+  justify-content: center;
+  border-radius: 10px;
+}
+.selecao-de-personagens .lista-de-personagens{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  border-radius: 10px;
+
+}
+.selecao-de-personagens .personagens{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 585px;
+  gap: 25px;
+  border-radius: 10px;
+}
+
+.selecao-de-personagens .personagens .titulo{
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-bottom: 2px solid red;
+  width: auto;
+  text-align: center;
+  
+}
+.lista-de-personagens .personagem {
+	border-bottom: 1px solid #ff0000;
+  border-radius: 10px;
+}
+.lista-de-personagens .personagem img{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.lista-de-personagens .personagem.selecionado{
+  box-shadow: 0px 0px 24px 5px red;
+}
+.personagem-selecionado{
+  text-align: center;
+  max-height: 300px;
+  
+}
+
+.personagem-selecionado .personagem-grande{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.personagem-selecionado .nome-personagem{
+  border-bottom: 2px solid  red;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+ 
+}
+
+.personagem-selecionado .descricao-personagem{
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+  width: 200px;
+}
